@@ -1,0 +1,16 @@
+let a = 3003434343,
+  b,
+  count = 0;
+while (a > 0) {
+  // eita mane hocche [a] er last er songkha
+  b = a % 10;
+
+  if (b == 0) {
+    count++;
+  } else {
+    break;
+  }
+  // eita mane hocche [a] er last er songkha bad
+  a = parseInt(a / 10);
+}
+console.log("count number of zero", count);
